@@ -7,23 +7,23 @@ Training large-scale language models with billions of parameters demands signifi
 Install LLMPruner from source.
 
 ```bash
-git clone ...
+git clone https://github.com/gaetanlop/LLMPruner.git
 cd llmpruner
 pip install .
 ```
 
 LLMPruner supports structured pruning on the width (attentions heads, MLP neurons, embedding channels) and depth (layers pruning) dimensions. 
 
-Performing width pruning on the attention heads and the neurons in the FFN layers.
+Example of performing width pruning on the attention heads, the neurons in the FFN layers and the embedding channels:
 
 ```python
 from llmpruner import PrunerConfig, PrunerModel
 
 config = PrunerConfig(
-        model_name_or_path=args.model_name_or_path,
-        new_hidden_size=args.new_hidden_size,
-        new_intermediate_size=args.new_intermediate_size,
-        new_num_attention_heads=args.new_num_attention_heads
+        model_name_or_path=model_name_or_path,
+        new_hidden_size=new_hidden_size,
+        new_intermediate_size=new_intermediate_size,
+        new_num_attention_heads=new_num_attention_heads
     )
 
 # The pruner model takes in a PrunerConfig and any arguments you would have used to instantiate a transformer model with from_pretrained such as the dtype, the device and the attention implementation.
@@ -59,8 +59,8 @@ More architectures might be added in the near future.
 ## Task list
 
 - [X] Add Llama architecture support
-- [] Add Gemma2 architecture support
-- [] Add Mistral architecture support
+- [ ] Add Gemma2 architecture support
+- [ ] Add Mistral architecture support
 
 ## Future directions
 
