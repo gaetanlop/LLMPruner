@@ -64,7 +64,7 @@ More architectures might be added in the near future.
 
 ## Future directions
 
-This library was developed during an 12-hour flight to ACL 2024 in Bangkok, as a way to make productive use of the long time of this flight. I may not have the bandwidth to continuously update it or add new structured pruning methods. 
+This library was developed during an 12-hour flight to ACL 2024 in Bangkok. I may not have the bandwidth to continuously update it or add new structured pruning methods. 
 
 ## Contact
 
