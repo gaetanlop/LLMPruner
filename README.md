@@ -1,6 +1,6 @@
 # LLMPruner
 
-Training large-scale language models with billions of parameters demands significant resources and time. Recently, NVIDIA released a [paper](https://www.arxiv.org/pdf/2407.14679) studying the best practices to compress a LLM using structured pruning. LLMPruner is an unofficial implementation of the pruning recipes developed in the paper. Specifically, LLMPruner offers tools for structured pruning of LLMs using only forward passes (it supports both width and depth pruning), minimizing memory usage and data requirements.
+Training large-scale language models (LLMs) with billions of parameters requires immense computational resources and time. In a [recent paper](https://www.arxiv.org/pdf/2407.14679), NVIDIA explored best practices for compressing LLMs through structured pruning. LLMPruner is an unofficial implementation of the pruning strategies presented in that paper. The library provides tools for structured pruning of LLMs using only forward passes, enabling both width and depth pruning while minimizing memory usage.
 
 ## Quickstart
 
